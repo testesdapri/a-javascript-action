@@ -18,8 +18,8 @@ inputs:
     required: false
 
 outputs: 
-  first-one-greeted:
-    description: "the first greeted person"
+  last-one-greeted:
+    description: "the person greeted last"
 
 runs:
   using: "node12"
