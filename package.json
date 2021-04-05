@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/testesdapri/a-javascript-action/issues"
   },
-  "homepage": "https://github.com/testesdapri/a-javascript-action#readme"
+  "homepage": "https://github.com/testesdapri/a-javascript-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  }
 }
