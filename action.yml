@@ -1,6 +1,6 @@
-name: "my hello action"
+name: "my javascript action"
 
-description: "say hello with GitHub Actions"
+description: "Simple greeting with GitHub Actions"
 
 inputs:
   first-greeting:
@@ -10,7 +10,7 @@ inputs:
 
   second-greeting:
     description: "another person to greet"
-    required: true
+    required: false
     default: "Mona the Octocat"
 
   third-greeting:
@@ -23,4 +23,4 @@ outputs:
 
 runs:
   using: "node12"
-  main: "main.js"
+  main: "index.js"
