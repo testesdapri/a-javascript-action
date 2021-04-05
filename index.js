@@ -12,3 +12,6 @@ if (secondGreeting) {
     console.log(`Hello ${thirdGreeting}`);
     core.setOutput(“last-one-greeted”);
 }
+catch (error) {
+  core.setFailed(error.message);
+}
