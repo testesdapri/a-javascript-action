@@ -11,7 +11,6 @@ inputs:
   second-greeting:
     description: "another person to greet"
     required: false
-    default: "Mona the Octocat"
 
   third-greeting:
     description: "a third greeting"
