@@ -3,6 +3,7 @@ const core = require("@actions/core");
 const firstGreeting = core.getInput("first-greeting");
 const secondGreeting = core.getInput("second-greeting");
 const thirdGreeting = core.getInput("third-greeting");
+const lastOneGreeted = core.setOutput("last-one-greeted");
 
 console.log(`Hello ${firstGreeting}`);
 if (secondGreeting) {
