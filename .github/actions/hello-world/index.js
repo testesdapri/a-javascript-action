@@ -17,6 +17,7 @@ async function run() {
         } else if (thirdGreeting) {
             console.log(`The last one greeted was ${thirdGreeting}!`);
             core.setOutput("last-one-greeted", thirdGreeting);
+        }
     } catch (error) {
       core.setFailed(error.message);
     }
