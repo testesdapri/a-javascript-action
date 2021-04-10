@@ -9,10 +9,8 @@ const lastOneGreeted = core.getInput("last-one-greeted");
 async function run() {
     try {
         if (firstGreeting) {
-            console.log(`The last one greeted was ${firstGreeting}!`);
             core.setOutput("last-one-greeted", firstGreeting); 
         } else if (secondGreeting) {
-            console.log(`The last one greeted was ${secondGreeting}!`);
             core.setOutput("last-one-greeted", secondGreeting);
         } else if (thirdGreeting) {
             console.log(`The last one greeted was ${thirdGreeting}!`);
@@ -24,3 +22,5 @@ async function run() {
 }
 
 run();
+console.log(`The first one to be greeted was ${firstGreeting}!`);
+console.log(`The second one to be greeted was ${secondGreeting}!`);
