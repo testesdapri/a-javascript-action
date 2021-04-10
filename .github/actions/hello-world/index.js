@@ -7,15 +7,30 @@ const thirdGreeting = core.getInput("third-greeting");
 const lastOneGreeted = core.getInput("last-one-greeted");
 
 try {
-    console.log(`Hello ${firstGreeting}`);
-    console.log(`Hello ${secondGreeting}`);
-    console.log(`Hello ${thirdGreeting}`);
-    
-    core.setOutput("first-greeting", firstGreeting); 
-    core.setOutput("second-greeting", secondGreeting);
-    core.setOutput("third-greeting", thirdGreeting);
-    core.setOutput("last-one-greeted", lastOneGreeted);
-              
+    if (firstGreeting) {
+        console.log(`The last one greeted was ${firstGreeting}!`);
+        core.setOutput("last-one-greeted", firstGreeting); 
+    } else if (secondGreeting) {
+        console.log(`The last one greeted was ${secondGreeting}!`);
+        core.setOutput("last-one-greeted", secondGreeting);
+    } else if (thirdGreeting) {
+        console.log(`The last one greeted was ${thirdGreeting}!`);
+        core.setOutput("last-one-greeted", thirdGreeting);
 } catch (error) {
   core.setFailed(error.message);
 }
+
+
+//try {
+    //console.log(`Hello ${firstGreeting}`);
+    //console.log(`Hello ${secondGreeting}`);
+    //console.log(`Hello ${thirdGreeting}`);
+    
+    //core.setOutput("first-greeting", firstGreeting); 
+    //core.setOutput("second-greeting", secondGreeting);
+    //core.setOutput("third-greeting", thirdGreeting);
+    //core.setOutput("last-one-greeted", lastOneGreeted);
+              
+//} catch (error) {
+  //core.setFailed(error.message);
+//}
