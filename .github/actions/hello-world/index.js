@@ -13,7 +13,6 @@ async function run() {
         } else if (secondGreeting) {
             core.setOutput("last-one-greeted", secondGreeting);
         } else if (thirdGreeting) {
-            console.log(`The last one greeted was ${thirdGreeting}!`);
             core.setOutput("last-one-greeted", thirdGreeting);
         }
     } catch (error) {
@@ -24,3 +23,4 @@ async function run() {
 run();
 console.log(`The first one to be greeted was ${firstGreeting}!`);
 console.log(`The second one to be greeted was ${secondGreeting}!`);
+console.log(`The last one to be greeted was ${thirdGreeting}!`);
