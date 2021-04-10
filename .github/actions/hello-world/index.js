@@ -11,9 +11,10 @@ try {
     console.log(`Hello ${secondGreeting}`);
     console.log(`Hello ${thirdGreeting}`);
     
-    core.setOutput(“last-one-greeted”, firstGreeting); 
-    core.setOutput(“last-one-greeted”, secondGreeting);
-    core.setOutput(“last-one-greeted”, thirdGreeting);    
+    core.setOutput("first-greeting", firstGreeting); 
+    core.setOutput("second-greeting", secondGreeting);
+    core.setOutput("third-greeting", thirdGreeting);
+    core.setOutput("last-one-greeted", lastOneGreeted);
               
 } catch (error) {
   core.setFailed(error.message);
