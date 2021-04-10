@@ -9,10 +9,10 @@ const lastOneGreeted = core.setOutput("last-one-greeted");
 console.log(`Hello ${firstGreeting}`);
 if (secondGreeting) {
     console.log(`Hello ${secondGreeting}`);
-    core.setOutput(“lastOneGreeted”); 
+    // core.setOutput(“lastOneGreeted”); 
 } else if (thirdGreeting) {
     console.log(`Hello ${thirdGreeting}`);
-    core.setOutput(“lastOneGreeted”);
+    // core.setOutput(“lastOneGreeted”);
 }
 catch (error) {
   core.setFailed(error.message);
