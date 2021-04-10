@@ -1,8 +1,21 @@
 name: My first Javascript Action
 
 on:
-  pull_request:
-    types: [labeled]
+  workflow_dispatch:
+    inputs:
+      first-greeting:
+        description: 'who would you like to greet in the console'
+        required: true
+        default: 'Hubot'
+      second-greeting:
+        description: 'another person to greet'
+        required: false
+      third-greeting:
+        description: 'a third greeting'
+        required: false
+
+  # pull_request:
+    # types: [labeled]
 
 jobs:
   action:
