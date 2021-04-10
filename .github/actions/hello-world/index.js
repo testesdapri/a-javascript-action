@@ -4,6 +4,7 @@ const github = require("@actions/github");
 const firstGreeting = core.getInput("first-greeting");
 const secondGreeting = core.getInput("second-greeting");
 const thirdGreeting = core.getInput("third-greeting");
+const lastOneGreeted = core.getInput("last-one-greeted");
 
 try {
     console.log(`Hello ${firstGreeting}`);
